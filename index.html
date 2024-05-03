@@ -1,10 +1,56 @@
 <!DOCTYPE html>
-<html>
-   <head>
-      <title>My Cool Website</title>
-   </head>
-   <body>
-      <h1>Welcome to my website! ⭐️</h1>
-      <p>How was your day? 🎉</p>
-   </body>
+<html  data-theme="cyberpunk">
+  <head>
+    <title>My Cool Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+   
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header class="bg-base-100">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="flex-1">
+          <a class="btn btn-ghost normal-case text-xl">Work with Chip</a>
+        </div>
+        <div class="flex-none">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <section id="home" class="max-w-4xl mx-auto h-[85vh] flex items-center justify-center">
+      <h1 class="text-6xl font-bold text-center mt-5">
+        Hello, I’m Chip, I'm a designer and developer with a focus on clarity,
+        usefulness and delight. And brevity.
+      </h1>
+    </section>
+    <section id="work" class="max-w-4xl mx-auto">
+      <h2 class="text-2xl font-semibold mt-4 ml-5">Work</h2>
+      <ul class="list-disc ml-10 mt-2">
+        <li>Alpha Innovations - Building intuitive tools</li>
+        <li>Beta Solutions - Crafting user-friendly apps</li>
+        <li>Gamma Tech - Developing scalable systems</li>
+        <li>Delta Creations - Enhancing digital experiences</li>
+        <li>Epsilon Enterprises - Streamlining operations with technology</li>
+      </ul>
+    </section>
+    <section id="contact" class="max-w-4xl mx-auto">
+      <div class="mt-6 p-5">
+        <h3 class="text-xl font-semibold mb-3">Contact</h3>
+        <form class="space-y-4">
+          <input type="text" placeholder="Your Name" class="w-full p-2 border border-gray-300 rounded-md" />
+          <input type="email" placeholder="Your Email" class="w-full p-2 border border-gray-300 rounded-md" />
+          <textarea placeholder="What's on your mind?" class="w-full p-4 h-40 border border-gray-300 rounded-md"></textarea>
+          <button type="submit" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Send
+          </button>
+        </form>
+      </div>
+    </section>
+  </body>
 </html>
