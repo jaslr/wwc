@@ -1,156 +1,250 @@
 <!DOCTYPE html>
-<html data-theme="cyberpunk" class="scroll-smooth">
+<html data-theme="cupcake" class="scroll-smooth">
+  <head>
+    <title>Work with Chip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/chip.svg" />
 
-<head>
-  <title>🍟 Work with Chip</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css" rel="stylesheet" type="text/css" />
-  <link rel="stylesheet" href="css/styles.css" />
-  <script src="/js/scripts.js"></script>
+    <script src="/js/scripts.js"></script>
+  </head>
 
-</head>
+  <body>
+    <header class="bg-base-100">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="/"
+            >Work with Chip</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex justify-center gap-1 p-2">
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')"
+              >🌲</a
+            >
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')"
+              >🧁</a
+            >
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')"
+              >💻</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section
+      id="home"
+      class="max-w-4xl mx-auto flex flex-col md:flex-row items-center justify-center px-4 md:px-0 h-[50vh] md:h-[70vh]"
+    >
+      <img
+        src="images/chip.svg"
+        class="mb-4 md:mb-0 max-w-[80px] md:max-w-[200px] h-auto"
+        alt="Chip SVG"
+      />
+      <h1 class="text-2xl md:text-6xl font-bold text-center md:text-left">
+        Hello, I'm Chip, I build technology products with a focus on clarity,
+        usefulness and delight. And brevity.
+      </h1>
+    </section>
+    <section id="work" class="max-w-4xl mx-auto bg-white py-16 gap-4">
+      <!-- Plumbing Card -->
+      <div class="divider my-[10vh]">
+        <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase">Work</h2>
+      </div>
+      <div class="card bordered pt-5 mb-5">
+        <figure>
+          <div
+            class="artboard artboard-demo artboard-horizontal phone-4 w-full h-full overflow-hidden"
+          >
+            <a href="/work/work01.html"
+              ><img
+                src="images/TradeSync.png"
+                alt="Hipages Logo"
+                class="w-full h-full object-cover object-end"
+            /></a>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2
+            class="text-3xl font-bold text-start mb-2 text-blue-500 card-title"
+          >
+            TradeSync
+          </h2>
+          <p>
+            TradeSync synchronises data from email, HiPages into and Xero to
+            streamline the invoicing process.
+          </p>
+          <div class="justify-end card-actions">
+            <a href="/work/work01.html" role="button" class="btn btn-link"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
+      <!--             Octopus Furniture Builder
+ -->
+      <div class="card bordered pt-5 mb-5">
+        <figure>
+          <div
+            class="artboard artboard-demo artboard-horizontal phone-4 w-full h-full overflow-hidden"
+          >
+            <a href="/work/work02.html"
+              ><img
+                src="images/octopus_bg.png"
+                alt="Octopus"
+                class="w-full h-full object-cover object-end"
+            /></a>
+          </div>
+        </figure>
+        <div class="card-body">
+          <h2
+            class="text-3xl font-bold text-start mb-2 text-blue-500 card-title"
+          >
+            Octopus fence estimator 
+          </h2>
+          <p>
+            Octopus fence estimator was built for a sales people to utilise existing draftings to 
+            accurately calculate build times, inventory
+            dimensions, costs, and provide a moderated communication channel for
+            exceptional customer service in the furniture building industry.
+          </p>
+          <div class="justify-end card-actions">
+            <a href="/work/work02.html" role="button" class="btn btn-link"
+              >Read More</a
+            >
+          </div>
+        </div>
+      </div>
 
-<body>
-  <header class="bg-base-100">
-    <div class="navbar max-w-7xl mx-auto">
-      <div class="flex-1">
-        <a class="btn btn-ghost normal-case text-xl">Work with Chip</a>
-      </div>
-      <div class="flex-none">
-        <ul class="menu menu-horizontal p-0">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+      <!-- Team Building Card -->
+      <div class="card lg:card-side flex flex-col lg:flex-row mb-32">
+        <figure class="lg:w-1/2">
+          <div class="artboard-demo">812×375</div>
+        </figure>
+        <div class="card-body lg:w-1/2">
+          <h2 class="card-title">TeamCraft</h2>
+          <p>
+            TeamCraft offers a dynamic platform to enhance corporate team
+            building through interactive challenges and real-time feedback. It
+            fosters collaboration and improves team dynamics using gamification
+            and analytics.
+          </p>
+          <div class="card-actions justify-end">
+            <a href="/work/work02.html" role="button" class="btn">Read More</a>
+          </div>
+        </div>
       </div>
 
-      <div class="flex justify-center gap-1 p-2">
-        <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')">🌲</a>
-        <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')">🧁</a>
-        <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')">💻</a>
-      </div>
-  </header>
-  <section id="home" class="max-w-4xl mx-auto h-[60vh] md:h-[70vh] flex items-center justify-center px-4 md:px-0">
-    <h1 class="text-3xl md:text-6xl font-bold text-center mt-5">
-      Hello, I'm Chip, I build technology products with a focus on clarity,
-      usefulness and delight. And brevity.
-    </h1>
-  </section>
-
-  <section id="work" class="max-w-4xl mx-auto">
-    <div class="divider text-left text-start mb-[10vh]">
-      <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase ">Work</h2>
-    </div>
-
-    <div class="collapse collapse-plus bg-base-200">
-      <input type="radio" name="my-accordion-3" checked="checked" />
-      <div class="collapse-title text-xl font-medium">
-        🛠️ Trade Service Booking System
-      </div>
-      <div class="collapse-content">
-        <div class="mockup-browser border border-base-300">
-          <div class="mockup-browser-toolbar">
-            <div class="input border border-base-300">https://daisyui.com</div>
-          </div>
-          <div class="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
-        </div>
-        <div class="mockup-phone border-primary">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo phone-1">Hi.</div>
+      <!-- Surveyor Scheduling Card -->
+      <div class="card lg:card-side flex flex-col lg:flex-row mb-32">
+        <figure class="lg:w-1/2">
+          <div class="artboard-demo">812×375</div>
+        </figure>
+        <div class="card-body lg:w-1/2">
+          <h2 class="card-title">SurveySched</h2>
+          <p>
+            SurveySched simplifies the scheduling and management of surveying
+            projects with tools for real-time coordination among teams,
+            comprehensive project tracking, and client reporting, enhancing
+            overall productivity.
+          </p>
+          <div class="card-actions justify-end">
+            <a href="/work/work04.html" role="button" class="btn">Read More</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="collapse collapse-plus bg-base-200">
-      <input type="radio" name="my-accordion-3" />
-      <div class="collapse-title text-xl font-medium">
-        🪑 Furniture Estimator
-      </div>
-      <div class="collapse-content">
-        <div class="mockup-window border bg-base-300">
-          <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
-        </div>
-        <div class="mockup-phone border-primary">
-          <div class="camera"></div>
-          <div the="display">
-            <div class="artboard artboard-demo phone-1">Hi.</div>
+      <!-- Ecommerce Logistics Card -->
+      <div class="card lg:card-side flex flex-col lg:flex-row">
+        <figure class="lg:w-1/2">
+          <div class="artboard-demo">812×375</div>
+        </figure>
+        <div class="card-body lg:w-1/2">
+          <h2 class="card-title">EcomLogix</h2>
+          <p>
+            EcomLogix offers a comprehensive suite of tools for optimizing
+            ecommerce logistics, from inventory management to order fulfillment
+            and shipping. It integrates seamlessly with existing online
+            platforms to boost operational efficiency.
+          </p>
+          <div class="card-actions justify-end">
+            <a href="/work/work05.html" role="button" class="btn">Read More</a>
           </div>
         </div>
       </div>
-    </div>
-    <div class="collapse collapse-plus bg-base-200">
-      <input type="radio" name="my-accordion-3" />
-      <div class="collapse-title text-xl font-medium">
-        🏥 Medical Service Communication
+    </section>
+    <section
+      id="contact"
+      class="max-w-4xl mx-auto mb-[10vh] border-top border-bottom"
+    >
+      <div class="divider my-[10vh]">
+        <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase">Contact</h2>
       </div>
-      <div class="collapse-content">
-        <div class="mockup-browser border border-base-300">
-          <div class="mockup-browser-toolbar">
-            <div class="input border border-base-300">https://daisyui.com</div>
-          </div>
-          <div class="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
+      <form
+        action="https://formspree.io/f/mgegdnaq"
+        method="POST"
+        class="form-control space-y-4"
+      >
+        <div class="grid grid-cols-1 gap-4">
+          <label class="label flex flex-col items-start">
+            Your email:
+            <input
+              type="email"
+              name="email"
+              class="input input-bordered w-full"
+              placeholder="yourname@yourbusiness.com"
+            />
+          </label>
+          <label class="label flex flex-col items-start">
+            Your message:
+            <textarea
+              name="message"
+              class="textarea textarea-bordered w-full"
+              placeholder="Your message here..."
+              style="min-height: 150px"
+            ></textarea>
+          </label>
         </div>
-        <div class="mockup-window border bg-base-300">
-          <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
-        </div>
-      </div>
-    </div>
-    <div class="collapse collapse-plus bg-base-200">
-      <input type="radio" name="my-accordion-3" />
-      <div class="collapse-title text-xl font-medium">
-        🏢 Team Building Booking
-      </div>
-      <div class="collapse-content">
-        <div class="mockup-phone border-primary">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo phone-1">Hi.</div>
-          </div>
-        </div>
-        <div class="mockup-window border bg-base-300">
-          <div class="flex justify-center px-4 py-16 bg-base-200">Hello!</div>
-        </div>
-      </div>
-    </div>
-    <div class="collapse collapse-plus bg-base-200">
-      <input type="radio" name="my-accordion-3" />
-      <div class="collapse-title text-xl font-medium">
-        🍽️ Hospitality Booking Platform
-      </div>
-      <div class="collapse-content">
-        <div class="mockup-browser border border-base-300">
-          <div class="mockup-browser-toolbar">
-            <div class="input border border-base-300">https://daisyui.com</div>
-          </div>
-          <div class="flex justify-center px-4 py-16 border-t border-base-300">Hello!</div>
-        </div>
-        <div class="mockup-phone border-primary">
-          <div class="camera"></div>
-          <div class="display">
-            <div class="artboard artboard-demo phone-1">Hi.</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id="contact" class="max-w-4xl mx-auto  mb-[10vh]">
-    <div class="divider my-[10vh]">
-      <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase ">Contact</h2>
-    </div>
-    <form action="https://formspree.io/f/mgegdnaq" method="POST" class="form-control space-y-4">
-      <div class="grid grid-cols-1 gap-4">
-        <label class="label flex flex-col items-start">
-          Your email:
-          <input type="email" name="email" class="input input-bordered w-full" placeholder="yourname@yourbusiness.com">
-        </label>
-        <label class="label flex flex-col items-start">
-          Your message:
-          <textarea name="message" class="textarea textarea-bordered w-full" placeholder="Your message here..." style="min-height: 150px;"></textarea>
-        </label>
-      </div>
-      <button type="submit" class="btn btn-primary btn-auto">Send message 🏃</button>
-    </form>
-  </section>
-</body>
+        <button type="submit" class="btn btn-primary btn-auto">
+          Send message 🏃
+        </button>
+      </form>
+    </section>
+  </body>
 </html>

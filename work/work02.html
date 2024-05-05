@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Work with Chip : Octopus Project Overview</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <script src="/js/injectHead.js" defer></script>
+    <script src="/js/scripts.js"></script>
+    <base href="/" />
+  </head>
+
+  <body class="bg-gray-100 font-sans">
+    <header class="bg-base-100">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="/"
+            >Work with Chip</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end">
+          <div class="flex justify-center gap-1 p-2">
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')"
+              >🌲</a
+            >
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')"
+              >🧁</a
+            >
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')"
+              >💻</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>    
+    <div class="max-w-4xl mx-auto px-4 py-8 bg-white">
+      <h1 class="text-3xl font-bold text-start mb-6 text-blue-500">
+        Octopus fence estimator 
+      </h1>
+      
+      <p class="text-start text-lg mb-6">
+        Octopus fence estimator is a dynamic data visualisation tool that
+        integrates seamlessly with multiple data sources to provide real-time
+        estimation on building fences
+      </p>
+      <p>
+        The platform was developed for a fencing provider  utilising
+        React, NextJS, and D3 for sophisticated visualisation capabilities.
+      </p>
+
+      
+      <p>
+          <img
+              src="images/octopus_content.png"
+              alt="Octopus"
+              class="w-fulls"
+          />
+        </p>  
+      
+
+      <div class="divider"></div>
+
+      <div class="bg-white p-6">
+        <h2 class="text-xl font-semibold mt-4 mb-4">Product</h2>
+        <p>Octopus fence estimator</p>
+        <h2 class="text-xl font-semibold mt-4 mb-4">Industry</h2>
+        <p>Analytics and Data Visualisation</p>
+      </div>
+
+      <div class="divider"></div>
+
+      <img src="/images/octopus_diagram.png" class="mx-auto" alt="octopus_diagram.png">
+
+      <div class="divider"></div>
+
+      <div class="bg-white p-6 mt-6">
+        <h2 class="text-2xl font-semibold mb-4">Project Duration</h2>
+        <p>14 weeks</p>
+        <h2 class="text-2xl font-semibold mb-4">Product Goals</h2>
+        <ul class="list-disc pl-5">
+          <li>Seamless integration with multiple data sources</li>
+          <li>Real-time data visualisation</li>
+          <li>Enhanced decision-making capabilities for users</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 mt-6">
+        <h2 class="text-2xl font-semibold mb-4">Product Technology</h2>
+        <p>Developed using React, NextJS, and D3.js</p>
+      </div>
+
+      <div class="bg-white p-6 mt-6">
+        <h2 class="text-2xl font-semibold mb-4">The Process</h2>
+        <ul class="list-disc pl-5">
+          <li>API Connectivity</li>
+          <li>System Testing</li>
+          <li>User Feedback Collection</li>
+        </ul>
+      </div>
+
+      <div class="bg-white p-6 mt-6">
+        <h2 class="text-2xl font-semibold mb-4">The Impacts</h2>
+        <ul class="list-disc pl-5">
+          <li>Streamlined data management</li>
+          <li>Improved analytical capabilities</li>
+          <li>Increased user satisfaction</li>
+        </ul>
+      </div>
+      <section
+        id="contact"
+        class="max-w-4xl mx-auto mb-[10vh] border-top border-bottom"
+      >
+        ...
+      </section>
+    </div>
+  </body>
+</html>

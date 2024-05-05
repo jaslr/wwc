@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-h1 {
-    font-family: 'Inter', sans-serif;
+html[data-theme="cyberpunk"] h1 {
+  font-family: "Inter", sans-serif;
+}
+#work {  
+  box-shadow: 0 0 0 100vmax #FFFFFF;
+  clip-path: inset(0 -100vmax);
+  background-color: #FFFFFF;
+}
+
+
+.grid-background {
+    background-image: linear-gradient(to right, #f0f0f0 1px, transparent 1px),
+                      linear-gradient(to bottom, #f0f0f0 1px, transparent 1px);
+    background-size: 64px 64px;
 }
