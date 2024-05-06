@@ -1,141 +1,187 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="scroll-smooth">
+  <head>
+    <title>Work with Chip</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="icon" type="image/svg+xml" href="images/chip.svg" />
+    <script src="/js/scripts.js"></script>
+    <base href="/" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Work with Chip : TradeSync Project Overview</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-  <!-- Include the JavaScript to inject head content -->
-  <script src="/js/injectHead.js" defer></script>
-  <script src="/js/scripts.js"></script>
-  <base href="/">
-</head>
-
-<body class="bg-gray-100 font-sans">
-  <header class="bg-base-100">
-    <div class="navbar max-w-7xl mx-auto">
-      <div class="navbar-start">
-        <div class="dropdown">
-          <label tabindex="0" class="btn btn-ghost lg:hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-              stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-            </svg>
-          </label>
-          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
+  <body>
+    <header class="bg-base-100 sticky top-0 z-50">
+      <div class="navbar max-w-7xl mx-auto">
+        <div class="navbar-start">
+          <div class="dropdown">
+            <label tabindex="0" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </label>
+            <ul
+              tabindex="0"
+              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
+            >
+            <li><a href="/">Home</a></li>
+              <li><a href="#work">Work</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+          <a class="btn btn-ghost normal-case text-xl" href="/"
+            >Work with Chip</a
+          >
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal p-0">
+            <li><a href="/">Home</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <a class="btn btn-ghost normal-case text-xl">Work with Chip</a>
-      </div>
-      <div class="navbar-center hidden lg:flex">
-        <ul class="menu menu-horizontal p-0">
-          <li><a href="#work">Work</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <div class="navbar-end">
-        <div class="flex justify-center gap-1 p-2">
-          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')">🌲</a>
-          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')">🧁</a>
-          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')">💻</a>
+        <div class="navbar-end">
+          <div class="flex justify-center gap-1 p-2">
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')"
+              >🌲</a
+            >
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')"
+              >🧁</a
+            >
+            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')"
+              >💻</a
+            >
+          </div>
         </div>
       </div>
-    </div>
-  </header>
-  <div class="max-w-4xl mx-auto px-4 py-8 bg-white">
-    <h1 class="text-3xl font-bold text-start mb-6 text-blue-500">TradeSync</h1>
+    </header>
+    <div class="max-w-4xl mx-auto px-8 pt-16 bg-white body-content">
+      <img src="/images/icon_tradesync.svg" class="w-10 h-10" />
 
+      <h1 class="text-3xl font-bold text-start mb-6 text-blue-500">
+        TradeSync
+      </h1>
 
-    <p class="text-start text-lg mb-6">TradeSync synchronises data from email, HiPages into and Xero to streamline the
-      invoicing process. By automatically integrating information from these sources, TradeSync eliminates the need for
-      manual data entry, saving time and reducing errors. This efficient solution enhances productivity and
-      profitability for businesses, ensuring invoices are generated accurately and effortlessly.</p>
-    <p>
-      The app was recently commissioned by a major electrical company to develop a customised solution tailored to their
-      specific needs. Leveraging cutting-edge technologies like Bun, JavaScript, React, and Node.js, the TradeSync team
-      delivered a highly customised invoicing and feedback system. This powerful combination of technologies ensures a
-      seamless user experience while enabling robust back-end processing capabilities, seamlessly integrating with the
-      company's existing infrastructure and workflows.</p>
-
-    <div class="divider"></div>
-
-
-    <div class="flex justify-center space-x-4 mb-6">
-      <img src="/images/TradeSync.png" alt="Hipages Logo">
-    </div>
-
-    <div class="divider"></div>
-
-
-    <div class="bg-white p-6">
-      <h2 class="text-xl font-semibold mt-4 mb-4">Product</h2>
+      <h2 class="text-xl font-semibold mt-4">Product</h2>
       <p>TradeSync</p>
-      <h2 class="text-xl font-semibold mt-4 mb-4">Industry</h2>
+      <h2 class="text-xl font-semibold mt-4">Industry</h2>
       <p>Trade: Electrician, Plumbing, Carpentry, Labour</p>
-    </div>
 
-
-    <div class="bg-white p-6 mt-6">
-      <h2 class="text-2xl font-semibold mb-4">Product Goals</h2>
-      <ul class="list-disc pl-5">
-        <li>Sync booking information seamlessly</li>
-        <li>Automate invoicing and payments</li>
-        <li>Enhance user experience for tradesmen and accountants</li>
-        <li>Enhance user experience for tradesmen and accountants</li>
-      </ul>
-    </div>
-
-    <div class="bg-white p-6 mt-6">
-      <h2 class="text-2xl font-semibold mb-4">The Process</h2>
-      <p>Integration Development</p>
-      <ul class="list-disc pl-5">
-        <li>API Connectivity</li>
-        <li>System Testing</li>
-        <li>User Feedback Collection</li>
-      </ul>
+      <p>
+        TradeSync synchronises data from email, HiPages into and Xero to
+        streamline the invoicing process.
+      </p>
       <div class="divider"></div>
-
-      <img src="/images/TradeSyncprocess.png" class="mx-auto" alt="Hipages Logo">
-
-      <div class="divider"></div>
-
-    </div>
-
-    <div class="bg-white p-6 mt-6">
-      <h2 class="text-2xl font-semibold mb-4">The Impacts</h2>
-      <ul class="list-disc pl-5">
-        <li>Streamlined booking management</li>
-        <li>Improved financial tracking and reporting</li>
-        <li>Increased satisfaction for users</li>
-      </ul>
-    </div>
-    <section id="contact" class="max-w-4xl mx-auto mb-[10vh] border-top border-bottom">
-      <div class="divider my-[10vh]">
-        <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase">Contact</h2>
+      <div class="flex justify-center space-x-4 mb-6">
+        <img src="/images/TradeSync.png" alt="Hipages Logo" />
       </div>
-      <form action="https://formspree.io/f/mgegdnaq" method="POST" class="form-control space-y-4">
-        <div class="grid grid-cols-1 gap-4">
-          <label class="label flex flex-col items-start">
-            Your email:
-            <input type="email" name="email" class="input input-bordered w-full"
-              placeholder="yourname@yourbusiness.com" />
-          </label>
-          <label class="label flex flex-col items-start">
-            Your message:
-            <textarea name="message" class="textarea textarea-bordered w-full" placeholder="Your message here..."
-              style="min-height: 150px"></textarea>
-          </label>
+      <div class="divider"></div>
+
+      <div class="bg-white mt-6">
+        <p>
+          TradeSync eliminates the need for double entry and saves time and
+          reduces human error.
+        </p>
+        <p>
+          The app was recently commissioned by a major electrical company to
+          develop a customised solution tailored to their specific needs.
+          Leveraging cutting-edge technologies like Bun, JavaScript, React, and
+          Node.js, the TradeSync team delivered a highly customised invoicing
+          and feedback system. This powerful combination of technologies ensures
+          a seamless user experience while enabling robust back-end processing
+          capabilities, seamlessly integrating with the company's existing
+          infrastructure and workflows.
+        </p>
+
+        <h2 class="text-2xl font-semibold my-4">Product Goals</h2>
+        <ul class="list-disc pl-5">
+          <li>Sync booking information seamlessly</li>
+          <li>Automate invoicing and payments</li>
+          <li>Enhance user experience for tradesmen and accountants</li>
+          <li>Enhance user experience for tradesmen and accountants</li>
+        </ul>
+
+        <div class="bg-white mt-6">
+          <h2 class="text-2xl font-semibold mb-4">The Process</h2>
+          <p>Integration Development</p>
+          <ul class="list-disc pl-5">
+            <li>API Connectivity</li>
+            <li>System Testing</li>
+            <li>User Feedback Collection</li>
+          </ul>
+          <div class="divider"></div>
+
+          <img
+            src="/images/TradeSyncprocess.png"
+            class="mx-auto"
+            alt="Hipages Logo"
+          />
+
+          <div class="divider"></div>
         </div>
-        <button type="submit" class="btn btn-primary btn-auto">
-          Send message 🏃
-        </button>
-      </form>
-    </section>
-  </div>
 
-</body>
-
+        <div class="bg-white mt-6">
+          <h2 class="text-2xl font-semibold mb-4">The Impacts</h2>
+          <ul class="list-disc pl-5">
+            <li>Streamlined booking management</li>
+            <li>Improved financial tracking and reporting</li>
+            <li>Increased satisfaction for users</li>
+          </ul>
+        </div>
+      </div>
+      <section
+        id="contact"
+        class="max-w-4xl mx-auto mb-[10vh] border-top border-bottom"
+      >
+        <div class="divider my-[10vh]">
+          <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase">Contact</h2>
+        </div>
+        <form
+          action="https://formspree.io/f/mgegdnaq"
+          method="POST"
+          class="form-control space-y-4"
+        >
+          <div class="grid grid-cols-1 gap-4">
+            <label class="label flex flex-col items-start">
+              Your email:
+              <input
+                type="email"
+                name="email"
+                class="input input-bordered w-full"
+                placeholder="yourname@yourbusiness.com"
+              />
+            </label>
+            <label class="label flex flex-col items-start">
+              Your message:
+              <textarea
+                name="message"
+                class="textarea textarea-bordered w-full"
+                placeholder="Your message here..."
+                style="min-height: 150px"
+              ></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-auto">
+            Send message 🏃
+          </button>
+        </form>
+      </section>
+    </div>
+  </body>
 </html>

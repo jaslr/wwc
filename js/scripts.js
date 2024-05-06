@@ -1,16 +1,13 @@
-function setTheme(themeName) {
-    document.documentElement.setAttribute('data-theme', themeName);
-    document.getElementById('themeLabel').textContent = themeName.charAt(0).toUpperCase() + themeName.slice(1);
-
-    // Remove tick marks from all theme options
-    const themeOptions = document.querySelectorAll('.theme-option');
-    themeOptions.forEach(option => {
-        option.textContent = option.getAttribute('data-theme').charAt(0).toUpperCase() + option.getAttribute('data-theme').slice(1);
-    });
-
-    // Add tick mark to the selected theme
-    const selectedOption = document.querySelector(`.theme-option[data-theme="${themeName}"]`);
-    if (selectedOption) {
-        selectedOption.textContent = '✓ ' + themeName.charAt(0).toUpperCase() + themeName.slice(1);
+document.addEventListener('DOMContentLoaded', () => {
+    const currentTheme = localStorage.getItem('theme');
+    if (currentTheme) {
+      document.documentElement.setAttribute('data-theme', currentTheme);
     }
-}
+  });
+  
+  function setTheme(themeName) {
+    document.documentElement.setAttribute('data-theme', themeName);
+    localStorage.setItem('theme', themeName);
+    console.log(`Theme set to ${themeName} ${themeName === 'light' ? '☀️' : themeName === 'dark' ? '🌙' : '🧁'}`);
+  }
+  

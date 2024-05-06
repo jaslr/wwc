@@ -10,3 +10,11 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Error loading the head content:', error));
 });
+
+
+module.exports = {
+    //...
+    daisyui: {
+      themes: ["light", "dark", "cupcake"],
+    },
+  }
