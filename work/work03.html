@@ -1,158 +1,134 @@
 <!DOCTYPE html>
-<html   class="scroll-smooth"  data-theme="nord">
-  <head>
-    <title>Work with Chip</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css"
-      rel="stylesheet"
-      type="text/css"
-    />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link rel="icon" type="image/svg+xml" href="images/chip.svg" />
+<html class="scroll-smooth" data-theme="nord">
 
-    <script src="/js/scripts.js"></script>
-    <base href="/" />
-  </head>
+<head>
+  <title>Work with Chip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="images/chip.svg" />
 
-  <body>
-    <header class="bg-base-100 sticky top-0 z-50">
-      <div class="navbar max-w-7xl mx-auto">
-        <div class="navbar-start">
-          <div class="dropdown">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M4 6h16M4 12h8m-8 6h16"
-                />
-              </svg>
-            </label>
-            <ul
-              tabindex="0"
-              class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52"
-            >
-            <li><a href="/">Home</a></li>
-              <li><a href="#work">Work</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
-          </div>
-          <a class="btn btn-ghost normal-case text-xl" href="/"
-            >Work with Chip</a
-          >
-        </div>
-        <div class="navbar-center hidden lg:flex">
-          <ul class="menu menu-horizontal p-0">
+  <script src="/js/scripts.js"></script>
+  <base href="/" />
+</head>
+
+<body>
+  <header class="bg-base-100 sticky top-0 z-50">
+    <div class="navbar max-w-7xl mx-auto">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </label>
+          <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
             <li><a href="/">Home</a></li>
             <li><a href="#work">Work</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
-        <div class="navbar-end">
-          <div class="flex justify-center gap-1 p-2">
-            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')"
-              >🌲</a
-            >
-            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')"
-              >🧁</a
-            >
-            <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')"
-              >💻</a
-            >
-          </div>
+        <a class="btn btn-ghost normal-case text-xl" href="/">Work with Chip</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal p-0">
+          <li><a href="/">Home</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="flex justify-center gap-1 p-2">
+          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')">🌲</a>
+          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')">🧁</a>
+          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')">💻</a>
         </div>
       </div>
-    </header>
-    <div class="max-w-4xl mx-auto p-8 bg-white body-content">
-      <h1 class="text-3xl font-bold text-start mb-6 text-blue-500">
-        <img src="/images/icon_easycarrier.svg" class="w-10 h-10" />EasyCarrier Shipping Solutions
-      </h1>
-      <p class="text-start text-lg mb-6">
-        EasyCarrier is a comprehensive logistics platform designed to streamline shipping operations for businesses, offering accurate rate calculations, label customization, and efficient order management.
-      </p>
-      <p class="mb-5">
-        The app allows logistics companies to accurately calculate shipping rates from multiple carriers, customize shipping labels with business branding and renaming options, and efficiently manage orders, tracking, packing slips, and fulfill shipments across multiple locations.
-      </p>
-      <p>
-        <img src="/images/easycarrier_contents01.png" alt="EasyCarrier" class="w-fulls" />
-      </p>
-      <p>
-        <img src="/images/easycarrier_contents02.png" alt="EasyCarrier" class="w-fulls" />
-      </p>
-      <div class="divider"></div>
-      <div class="bg-white p-6">
-        <h2 class="text-xl font-semibold mt-4 mb-4">Product</h2>
-        <p>EasyCarrier Shipping Solutions</p>
-        <h2 class="text-xl font-semibold mt-4 mb-4">Industry</h2>
-        <p>Logistics and Supply Chain Management</p>
-      </div>
-      <div class="divider"></div>
-      <img src="/images/easycarrier-diagram.png" class="mx-auto" alt="easycarrier_diagram.png" />
-      <div class="divider"></div>
-      
-        <h2 class="text-2xl font-semibold mb-4">Project Duration</h2>
-        <p>8 weeks</p>
-        <h2 class="text-2xl font-semibold mb-4">Product Goals</h2>
-        <ul class="list-disc pl-5">
-          <li>Provide accurate shipping rate calculations</li>
-          <li>Enable customizable shipping labels</li>
-          <li>Streamline order management processes</li>
-        </ul>
-      
-        <h2 class="text-2xl font-semibold mb-4">Product Technology</h2>
-        <p>Developed using React, Node.js, and Express.js</p>
-      
-        <h2 class="text-2xl font-semibold mb-4">The Process</h2>
-        <ul class="list-disc pl-5">
-          <li>Carrier API Integration</li>
-          <li>User Interface Design</li>
-          <li>Rigorous Testing and Deployment</li>
-        </ul>
-      
-      
-      <section id="contact" class="max-w-4xl mx-auto mt-5 mb-\[10vh\] border-top border-bottom">
-        <div class="divider my-\[10vh\]">
-          <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase">Contact</h2>
-        </div>
-        <form
-          action="https://formspree.io/f/mgegdnaq"
-          method="POST"
-          class="form-control space-y-4"
-        >
-          <div class="grid grid-cols-1 gap-4">
-            <label class="label flex flex-col items-start">
-              Your email:
-              <input
-                type="email"
-                name="email"
-                class="input input-bordered w-full"
-                placeholder="yourname@yourbusiness.com"
-              />
-            </label>
-            <label class="label flex flex-col items-start">
-              Your message:
-              <textarea
-                name="message"
-                class="textarea textarea-bordered w-full"
-                placeholder="Your message here..."
-                style="min-height: 150px"
-              ></textarea>
-            </label>
-          </div>
-          <button type="submit" class="btn btn-primary btn-auto">
-            Send message 🏃
-          </button>
-        </form>
-      </section>
     </div>
-  </body>
+  </header>
+  <div class="max-w-4xl mx-auto p-8 bg-white body-content">
+    <h1 class="text-3xl font-bold text-start mb-6 text-blue-500">
+      <img src="/images/icon_easycarrier.svg" class="w-10 h-10" />EasyCarrier Shipping Solutions
+    </h1>
+    <p class="text-start text-lg mb-6">
+      EasyCarrier is a comprehensive logistics platform designed to streamline shipping operations for businesses,
+      offering accurate rate calculations, label customization, and efficient order management.
+    </p>
+    <div class="divider"></div>
+    <div class="bg-white p-6">
+      <h2 class="text-xl font-semibold mt-4 mb-4">Product</h2>
+      <p>EasyCarrier Shipping Solutions</p>
+      <h2 class="text-xl font-semibold mt-4 mb-4">Industry</h2>
+      <p>Logistics and Supply Chain Management</p>
+    </div>
+    <div class="divider"></div>
+    <p class="mb-5">
+      The app allows logistics companies to accurately calculate shipping rates from multiple carriers, customize
+      shipping labels with business branding and renaming options, and efficiently manage orders, tracking, packing
+      slips, and fulfill shipments across multiple locations.
+    </p>
+    <p>
+      <img src="/images/easycarrier_contents01.png" alt="EasyCarrier" class="w-fulls" />
+    </p>
+    <div class="divider"></div>
+
+    <p>
+      <img src="/images/easycarrier-gen.png" alt="EasyCarrier" class="w-fulls" />
+    </p>
+    <div class="divider"></div>
+
+    <p>
+      <img src="/images/easycarrier_contents02.png" alt="EasyCarrier" class="w-fulls" />
+    </p>
+
+    <img src="/images/easycarrier-diagram.png" class="mx-auto" alt="easycarrier_diagram.png" />
+    <div class="divider"></div>
+
+    <h2 class="text-2xl font-semibold mb-4">Project Duration</h2>
+    <p>8 weeks</p>
+    <h2 class="text-2xl font-semibold mb-4">Product Goals</h2>
+    <ul class="list-disc pl-5">
+      <li>Provide accurate shipping rate calculations</li>
+      <li>Enable customizable shipping labels</li>
+      <li>Streamline order management processes</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold mb-4">Product Technology</h2>
+    <p>Developed using React, Node.js, and Express.js</p>
+
+    <h2 class="text-2xl font-semibold mb-4">The Process</h2>
+    <ul class="list-disc pl-5">
+      <li>Carrier API Integration</li>
+      <li>User Interface Design</li>
+      <li>Rigorous Testing and Deployment</li>
+    </ul>
+
+
+    <section id="contact" class="max-w-4xl mx-auto mt-5 mb-\[10vh\] border-top border-bottom">
+      <div class="divider my-\[10vh\]">
+        <h2 class="text-5xl font-semibold mt-4 ml-5 uppercase">Contact</h2>
+      </div>
+      <form action="https://formspree.io/f/mgegdnaq" method="POST" class="form-control space-y-4">
+        <div class="grid grid-cols-1 gap-4">
+          <label class="label flex flex-col items-start">
+            Your email:
+            <input type="email" name="email" class="input input-bordered w-full"
+              placeholder="yourname@yourbusiness.com" />
+          </label>
+          <label class="label flex flex-col items-start">
+            Your message:
+            <textarea name="message" class="textarea textarea-bordered w-full" placeholder="Your message here..."
+              style="min-height: 150px"></textarea>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-auto">
+          Send message 🏃
+        </button>
+      </form>
+    </section>
+  </div>
+</body>
+
 </html>
