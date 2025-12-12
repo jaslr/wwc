@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html data-theme="corporate" class="scroll-smooth">
+
+<head>
+  <title>Brontiq Books - Work with Chip</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.4/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="icon" type="image/svg+xml" href="/images/chip.svg" />
+  <script src="/js/scripts.js"></script>
+  <base href="/" />
+</head>
+
+<body>
+  <header class="bg-base-100 sticky top-0 z-50">
+    <div class="navbar max-w-7xl mx-auto">
+      <div class="navbar-start">
+        <a class="btn btn-ghost normal-case text-xl" href="/">Work with Chip</a>
+      </div>
+      <div class="navbar-center hidden lg:flex">
+        <ul class="menu menu-horizontal p-0">
+          <li><a href="/#work">Work</a></li>
+          <li><a href="/#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="navbar-end">
+        <div class="flex justify-center gap-1 p-2">
+          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('forest')">🌲</a>
+          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cupcake')">🧁</a>
+          <a class="btn btn-ghost btn-xs p-1" onclick="setTheme('cyberpunk')">💻</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto px-4 py-16">
+    <a href="/" class="btn btn-ghost mb-8">&larr; Back to Work</a>
+
+    <div class="flex items-center gap-4 mb-8">
+      <span class="bg-blue-600 text-white px-4 py-2 rounded-lg text-2xl font-bold">B</span>
+      <h1 class="text-5xl font-bold">Brontiq Books</h1>
+    </div>
+
+    <p class="text-xl mb-8 text-gray-600">
+      A local-first invoice ledger system for managing client invoices, statements, and payments.
+    </p>
+
+    <div class="prose max-w-none mb-12">
+      <h2>Overview</h2>
+      <p>
+        Brontiq Books was built to provide a simple, privacy-focused solution for freelancers
+        and small businesses to manage their invoicing workflow. The application runs locally,
+        ensuring your financial data stays on your machine.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li><strong>Client Statements</strong> - Generate comprehensive statements showing all invoices, payments, and outstanding balances per client</li>
+        <li><strong>Invoice Management</strong> - Create, edit, and track invoices with line items, GST calculations, and payment status</li>
+        <li><strong>Payment Tracking</strong> - Record payments against invoices with support for partial payments and credits</li>
+        <li><strong>PDF Export</strong> - Download invoices and statements as professional PDF documents</li>
+        <li><strong>Date Filtering</strong> - Filter statements by date range for specific reporting periods</li>
+        <li><strong>Local-First</strong> - All data stored locally for privacy and offline access</li>
+      </ul>
+
+      <h2>Screenshots</h2>
+    </div>
+
+    <figure class="mb-8">
+      <img src="/images/brontiq_combined.png" alt="Brontiq Books - Statement and Invoice views" class="rounded-lg shadow-lg w-full" />
+      <figcaption class="text-center text-gray-500 mt-4">Client statement overview and invoice detail view</figcaption>
+    </figure>
+
+    <div class="prose max-w-none mb-12">
+      <h2>Technology Stack</h2>
+      <ul>
+        <li>SvelteKit for the frontend framework</li>
+        <li>Local storage for data persistence</li>
+        <li>Tailwind CSS with DaisyUI for styling</li>
+        <li>PDF generation for document export</li>
+      </ul>
+    </div>
+
+    <div class="flex gap-4">
+      <a href="https://www.brontiqbooks.com" target="_blank" class="btn btn-primary">Visit Brontiq Books</a>
+      <a href="/" class="btn btn-ghost">Back to Work</a>
+    </div>
+  </main>
+
+  <footer class="bg-base-200 py-8 mt-16">
+    <div class="max-w-4xl mx-auto text-center">
+      <p class="text-gray-500">A <a href="https://www.workwithchip.com" class="link">Work with Chip</a> project</p>
+    </div>
+  </footer>
+</body>
+
+</html>
