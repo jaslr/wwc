@@ -11,22 +11,32 @@ Personal portfolio website showcasing software development projects.
 git add .
 git commit -m "Your commit message"
 
-# 2. Push to GitHub (triggers auto-deploy to Cloudflare)
+# 2. Push to GitHub (triggers auto-deploy to Cloudflare Pages)
 git push origin main
 
 # 3. Monitor GitHub Actions
 # https://github.com/jaslr/wwc/actions
 # Wait for green checkmark
 
-# 4. Verify on Cloudflare
-# Check https://www.workwithchip.com to confirm changes are live
+# 4. Site is live at https://www.workwithchip.com
 ```
 
 ## Deployment Pipeline
 
 1. **Push to main** → triggers GitHub Actions
-2. **GitHub Actions** → builds and deploys to Cloudflare Pages
+2. **GitHub Actions** → runs `wrangler pages deploy` to Cloudflare Pages
 3. **Cloudflare Pages** → serves at www.workwithchip.com
+
+## Manual Deploy (if needed)
+
+```bash
+npx wrangler pages deploy . --project-name=workwithchip
+```
+
+## GitHub Secrets Required
+
+- `CLOUDFLARE_ACCOUNT_ID` - Cloudflare account ID
+- `CLOUDFLARE_API_TOKEN` - Cloudflare API token with Pages write permission
 
 ## Project Structure
 
