@@ -1,6 +1,6 @@
 {
   "name": "workwithchip",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Personal portfolio website - Work with Chip",
   "scripts": {
     "version:patch": "npm version patch --no-git-tag-version && node scripts/update-version.js",
